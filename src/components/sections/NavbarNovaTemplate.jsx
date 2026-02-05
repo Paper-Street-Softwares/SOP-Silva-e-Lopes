@@ -144,7 +144,7 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className="text-sm mb-0 bg-primaryLight"
+              className="text-sm mb-0 bg-[#072829] border-2 border-white/30"
             />
           </div>
 
@@ -227,7 +227,7 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                    className="text-sm mb-0 bg-primaryLight w-fit"
+                    className="text-sm mb-0 bg-[#072829] border-2 border-white/30 w-fit"
                   />
                 </div>
               </motion.div>
