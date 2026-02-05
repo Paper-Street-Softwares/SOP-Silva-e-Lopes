@@ -34,10 +34,10 @@ function FooterNovoTemplate({
   let text, textOpacity, iconColor, backgroundMode
   switch (colorMode) {
     case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-white'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      iconColor = 'text-primaryLight/80'
+      backgroundMode = 'bg-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
@@ -65,7 +65,7 @@ function FooterNovoTemplate({
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
-                  className="w-[30%]"
+                  className="w-[70%]"
                   width={187}
                   height={119}
                 />
