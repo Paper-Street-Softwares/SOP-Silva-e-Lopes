@@ -34,10 +34,10 @@ function FooterNovoTemplate({
   let text, textOpacity, iconColor, backgroundMode
   switch (colorMode) {
     case 'light':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-primaryLight/80'
-      backgroundMode = 'bg-primaryDark'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      iconColor = 'text-primaryDark/60'
+      backgroundMode = 'bg-white'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
@@ -48,8 +48,8 @@ function FooterNovoTemplate({
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-secondary/60'
+      iconColor = 'text-white/60'
+      backgroundMode = 'bg-primaryDark'
   }
 
   return (
@@ -62,13 +62,21 @@ function FooterNovoTemplate({
             >
               {/* Logo e infos */}
               <div className="space-y-6">
-                <img
-                  src={content.texts.navbar.logo.img}
-                  alt={content.texts.navbar.logo.alt}
-                  className="w-[70%]"
-                  width={187}
-                  height={119}
-                />
+                <a
+                  className="cursor-pointer"
+                  href="/"
+                  onClick={() => window.location.reload()}
+                  aria-label="recarregar página "
+                >
+                  <img
+                    src={content.texts.navbar.logo.img}
+                    alt={content.texts.navbar.logo.alt}
+                    className="w-[50%]"
+                    width={187}
+                    height={119}
+                  />
+                </a>
+
                 <p
                   className={`leading-relaxed font-secondFont font-light ${textOpacity}`}
                 >
@@ -218,11 +226,11 @@ function FooterNovoTemplate({
               )}
             </div>
 
-            {/* <hr
+            <hr
               className={`pb-6 border-t ${text} ${
                 colorMode === 'light' ? 'opacity-90' : 'opacity-20'
               } w-full`}
-            /> */}
+            />
 
             {/* Footer Bottom */}
             <div

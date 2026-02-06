@@ -13,10 +13,12 @@ import { useContext } from 'react'
 function NavbarNovaTemplate({
   colorMode,
   backgrondMode,
+  backgrondModeActive,
   textOpacity,
   hoverLinks,
   colorMenu,
   bgOpacitySidebar,
+  borderButtons,
 }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -35,11 +37,12 @@ function NavbarNovaTemplate({
 
   switch (colorMode) {
     case 'light':
-      backgrondMode = 'bg-primaryDark'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgrondMode = 'bg-white'
+      textOpacity = 'text-corTitulosPreto'
       hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
-      colorMenu = 'text-white'
+      colorMenu = 'text-primaryDark'
       bgOpacitySidebar = 'bg-white/70'
+      backgrondModeActive = 'bg-transparent'
 
       break
     case 'dark':
@@ -48,14 +51,17 @@ function NavbarNovaTemplate({
       hoverLinks = ' bg-gradient-to-r from-primaryLight to-primaryLight '
       colorMenu = 'text-primaryLight'
       bgOpacitySidebar = 'bg-black/70'
+      backgrondModeActive = 'bg-transparent'
 
       break
     case 'default':
-      backgrondMode = 'bg-white'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
-      colorMenu = 'text-primaryDark'
+      backgrondMode = 'bg-primaryDark'
+      textOpacity = 'text-corTitulosBranca'
+      hoverLinks = ' bg-gradient-to-r from-white to-white '
+      colorMenu = 'text-white'
       bgOpacitySidebar = 'bg-white/70'
+      backgrondModeActive = 'bg-primaryDark'
+      borderButtons = 'border-2 border-terciary/60'
   }
 
   return (
@@ -63,35 +69,41 @@ function NavbarNovaTemplate({
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent ${
           isScrolled
-            ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : 'bg-primaryDark border-border/40 py-3 phone2:h-auto'
+            ? `${backgrondMode} backdrop-blur-md py-1 shadow-sm border-shadowHero/10 h-auto`
+            : `${backgrondModeActive} border-border/40 py-0 phone2:h-auto`
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[20%] tablet1:w-[15%] tablet2:w-[15%] desktop1:w-[10%] desktop2:w-[10%] desktop3:w-[8%] transition-all duration-700'
-                : 'py-0 w-[30%] tablet1:w-[20%] tablet2:w-[20%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
+                ? 'w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[10%] desktop2:w-[10%] desktop3:w-[8%] transition-all duration-700'
+                : 'py-3 w-[30%] tablet1:w-[30%] tablet2:w-[25%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
             }`}
           >
-            {' '}
-            <img
-              src={content.texts.navbar.logo.img}
-              alt={content.texts.navbar.logo.alt}
-              className="w-[100%] desktop1:hidden"
-              width={195}
-              height={94}
-              fetchPriority="high"
-            />
-            <img
-              src={content.texts.navbar.logo.imgDesktop}
-              alt={content.texts.navbar.logo.alt}
-              className="w-[100%] hidden desktop1:flex"
-              width={350}
-              height={170}
-              fetchPriority="high"
-            />
+            <a
+              className="cursor-pointer"
+              href="/"
+              onClick={() => window.location.reload()}
+              aria-label="recarregar página "
+            >
+              <img
+                src={content.texts.navbar.logo.img}
+                alt={content.texts.navbar.logo.alt}
+                className="w-[100%] desktop1:hidden"
+                width={195}
+                height={105}
+                fetchPriority="high"
+              />
+              <img
+                src={content.texts.navbar.logo.imgDesktop}
+                alt={content.texts.navbar.logo.alt}
+                className="w-[100%] hidden desktop1:flex"
+                width={350}
+                height={188}
+                fetchPriority="high"
+              />
+            </a>
           </div>
 
           {/* Desktop Nav */}
@@ -144,7 +156,8 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className="text-sm mb-0 bg-[#072829] border-2 border-white/30"
+              className={`text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
+              shineClass={`bg-primaryDark/20`}
             />
           </div>
 
@@ -227,7 +240,8 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                    className="text-sm mb-0 bg-[#072829] border-2 border-white/30 w-fit"
+                    className={`w-fit text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
+                    shineClass={`bg-primaryDark/20`}
                   />
                 </div>
               </motion.div>

@@ -52,9 +52,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-borderImage'
       break
     default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
@@ -71,7 +71,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       <SectionWrapper>
         <section className="w-full relative overflow-visible">
           <div className="container mx-auto relative z-10">
-            <div className="grid lg:grid-cols-2 gap-4 desktop1:gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-0 desktop1:gap-16 items-center">
               {/* Conteúdo textual */}
               <div className="space-y-8">
                 <div>

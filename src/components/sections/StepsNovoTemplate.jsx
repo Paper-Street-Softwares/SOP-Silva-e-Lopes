@@ -45,9 +45,9 @@ function StepsNovoTemplate({ colorMode }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
       stepNumberText = 'text-primaryDark'
       lineColor = 'bg-primaryDark/20'
@@ -59,7 +59,7 @@ function StepsNovoTemplate({ colorMode }) {
     <SectionArea className={backgroundMode} data-theme={colorMode}>
       <SectionWrapper>
         <div className="mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-2 desktop1:gap-16 items-center">
             {/* Imagem */}
             <div
               initial={{ opacity: 0, x: -50 }}

@@ -15,6 +15,8 @@ import {
   FileText,
   ChartNoAxesCombined,
   Scale,
+  BriefcaseMedical,
+  BriefcaseBusiness,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -67,14 +69,14 @@ function HeroTemplateNovo({
     case 'default':
       backgroundMode = 'bg-white'
       bgFaixaHero = 'bg-secondary'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
+      bgMinitag = 'bg-white border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
-      borderColor = 'border-white'
+      borderColor = 'bg-white'
   }
 
   const { showGlobalButton } = useColorMode()
@@ -111,7 +113,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[100px] phone2:pt-[100px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[150px] tablet1:pt-[170px] tablet2:pt-[180px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -133,12 +135,12 @@ function HeroTemplateNovo({
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  <Scale className="w-4 h-4" />
+                  <BriefcaseBusiness className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
+                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>

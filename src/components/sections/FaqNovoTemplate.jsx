@@ -32,10 +32,10 @@ function FaqNovoTemplate({ colorMode }) {
       break
 
     default:
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
   }
 
   return (
@@ -80,7 +80,7 @@ function FaqNovoTemplate({ colorMode }) {
           </div>
 
           <div
-            className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer hover:underline ${textOpacity}`}
+            className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer  ${textOpacity}`}
           >
             <a
               href={content.texts.links.ctaWhatsapp}

@@ -34,7 +34,7 @@ export default function BlogButton({
     <a
       href={buttonLink}
       target="an_blk"
-      className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around transition ${color} text-colorBlack hover:scale-110`}
+      className={`flex ${className} ${sizeFeatures} flex-row items-center justify-around ${color} scale-100 hover:scale-95 duration-500 transition-all `}
     >
       <div className={`flex items-center text-center ${gap} min-h-[24px]`}>
         <div className="">{icon}</div>

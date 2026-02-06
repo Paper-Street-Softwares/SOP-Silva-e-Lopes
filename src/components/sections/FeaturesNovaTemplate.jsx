@@ -63,10 +63,10 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-white'
       bgAccordion = '#fff'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-quartenary'
       iconBg = 'bg-white text-primaryDark'
@@ -90,7 +90,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
       <SectionWrapper>
         <section className="relative font-mainFont w-full">
           <div className="mx-auto">
-            <div className="flex flex-col-reverse desktop1:flex-row gap-16 items-center">
+            <div className="flex flex-col-reverse desktop1:flex-row gap-12 items-center">
               {/* Imagem com destaque */}
               <div>
                 {' '}
