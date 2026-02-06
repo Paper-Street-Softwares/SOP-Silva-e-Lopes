@@ -61,7 +61,7 @@ function NavbarNovaTemplate({
       colorMenu = 'text-white'
       bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-primaryDark'
-      borderButtons = 'border-2 border-terciary/60'
+      backgrondModeActive = 'bg-transparent'
   }
 
   return (

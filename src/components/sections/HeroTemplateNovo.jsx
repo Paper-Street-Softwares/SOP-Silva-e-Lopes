@@ -67,10 +67,10 @@ function HeroTemplateNovo({
 
       break
     case 'default':
-      backgroundMode = 'bg-white'
-      bgFaixaHero = 'bg-secondary'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
+      backgroundMode = 'bg-primaryDark'
+      bgFaixaHero = 'bg-transparent'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryDark'
       bgMinitag = 'bg-white border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'

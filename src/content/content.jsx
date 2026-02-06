@@ -126,7 +126,7 @@ const content = {
             esperar
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-primaryLight hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -138,7 +138,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
+                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-text-primaryLight desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -505,23 +505,23 @@ const content = {
       ),
       container: {
         label1: {
-          icon: <Check />,
+          icon: <Check className="text-white" />,
           text: ' Análise inicial do seu caso criminal',
         },
         label2: {
-          icon: <Check />,
+          icon: <Check className="text-white" />,
           text: ' Atendimento direto com advogado criminalista',
         },
         label3: {
-          icon: <Check />,
+          icon: <Check className="text-white" />,
           text: ' Resposta rápida e acompanhamento pelo WhatsApp',
         },
         label4: {
-          icon: <Check />,
+          icon: <Check className="text-white" />,
           text: ' Atuação iniciada imediatamente após a análise',
         },
         label5: {
-          icon: <Check />,
+          icon: <Check className="text-white" />,
           text: ' Mais segurança para você e sua família em um momento decisivo',
         },
       },
