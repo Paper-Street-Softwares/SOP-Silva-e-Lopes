@@ -72,7 +72,7 @@ function HeroTemplateNovo({
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-white border-primaryDark text-primaryDark'
+      bgMinitag = 'bg-primaryDark border-white text-white'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
