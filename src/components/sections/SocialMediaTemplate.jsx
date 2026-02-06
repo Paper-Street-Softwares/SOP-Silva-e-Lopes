@@ -5,6 +5,7 @@ import content from '../../content/content'
 import { Instagram, ArrowRight, Facebook } from 'lucide-react'
 import iconTikTok from '../../assets/imgs/icons/tiktok.png'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function SocialMediaTemplate({ colorMode }) {
   let backgroundMode,
@@ -66,33 +67,36 @@ function SocialMediaTemplate({ colorMode }) {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Imagem */}
-              <div className="flex justify-center overflow-visible">
-                <div
-                  className={`relative max-w-md w-full rounded-[2.5rem] shadow-2xl border-[8px] ${imageBorder}`}
-                >
-                  {/* GLOW */}
+              <MotionDivDownToUp>
+                <div className="flex justify-center overflow-visible">
                   <div
-                    className="absolute -inset-4 rounded-[3rem]
-                 bg-gradient-to-tr from-purple-500 to-orange-400
-                 opacity-20 blur-2xl pointer-events-none"
-                  />
-
-                  {/* CLIP DA IMAGEM */}
-                  <div className="relative rounded-[2rem] overflow-hidden">
-                    <img
-                      src={content.texts.about.aboutSocial.img.img}
-                      alt={content.texts.about.aboutSocial.img.alt}
-                      className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1.5rem]"
-                      width={448}
-                      height={618}
+                    className={`relative max-w-md w-full rounded-[2.5rem] shadow-2xl border-[8px] ${imageBorder}`}
+                  >
+                    {/* GLOW */}
+                    <div
+                      className="absolute -inset-4 rounded-[3rem]
+                       bg-gradient-to-tr from-purple-500 to-orange-400
+                        opacity-20 blur-2xl pointer-events-none"
                     />
+
+                    {/* CLIP DA IMAGEM */}
+                    <div className="relative rounded-[2rem] overflow-hidden">
+                      <img
+                        src={content.texts.about.aboutSocial.img.img}
+                        alt={content.texts.about.aboutSocial.img.alt}
+                        className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1.5rem]"
+                        width={448}
+                        height={618}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </MotionDivDownToUp>
 
               {/* Cards sociais */}
-              <div className="space-y-8">
-                {/* {content.texts.links.facebook?.trim() && (
+              <MotionDivDownToUp>
+                <div className="space-y-8">
+                  {/* {content.texts.links.facebook?.trim() && (
                   <a
                     href={content.texts.links.facebook}
                     target="_blank"
@@ -123,38 +127,38 @@ function SocialMediaTemplate({ colorMode }) {
                   </a>
                 )} */}
 
-                {content.texts.links.instagram?.trim() && (
-                  <a
-                    href={content.texts.links.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Link para Instagram"
-                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
-                  >
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-orange-500 text-white flex items-center justify-center shrink-0">
-                      <Instagram className="w-7 h-7" />
-                    </div>
+                  {content.texts.links.instagram?.trim() && (
+                    <a
+                      href={content.texts.links.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link para Instagram"
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                    >
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-orange-500 text-white flex items-center justify-center shrink-0">
+                        <Instagram className="w-7 h-7" />
+                      </div>
 
-                    <div>
-                      <h1
-                        className={`font-bold font-secondFont text-lg ${text}`}
-                      >
-                        Instagram
-                      </h1>
-                      <p
-                        className={`font-secondFont font-light text-sm ${textOpacity}`}
-                      >
-                        Dicas diárias e bastidores
-                      </p>
-                    </div>
+                      <div>
+                        <h1
+                          className={`font-bold font-secondFont text-lg ${text}`}
+                        >
+                          Instagram
+                        </h1>
+                        <p
+                          className={`font-secondFont font-light text-sm ${textOpacity}`}
+                        >
+                          Dicas diárias e bastidores
+                        </p>
+                      </div>
 
-                    <ArrowRight
-                      className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
-                    />
-                  </a>
-                )}
+                      <ArrowRight
+                        className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
+                      />
+                    </a>
+                  )}
 
-                {/* {content.texts.links.tiktok?.trim() && (
+                  {/* {content.texts.links.tiktok?.trim() && (
                   <a
                     href={content.texts.links.tiktok}
                     target="_blank"
@@ -182,7 +186,8 @@ function SocialMediaTemplate({ colorMode }) {
                     />
                   </a>
                 )} */}
-              </div>
+                </div>
+              </MotionDivDownToUp>
             </div>
           </div>
         </section>

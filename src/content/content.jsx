@@ -126,7 +126,7 @@ const content = {
             esperar
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-primaryLight hidden desktop1:flex"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-primaryLight hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
