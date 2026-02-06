@@ -56,7 +56,7 @@ function SectionHeaderNovo({
   if (type === 'article') {
     usage = 'text-start mb-8'
   } else {
-    usage = 'text-center mb-16'
+    usage = 'text-center mb-8'
   }
 
   return (
