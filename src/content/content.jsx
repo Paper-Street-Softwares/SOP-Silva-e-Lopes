@@ -151,7 +151,7 @@ const content = {
               </svg>
             </span>
           </span>{' '}
-          não pode
+          não pode esperar
         </h1>
       ),
       subtitle: (
