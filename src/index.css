@@ -125,3 +125,7 @@ body {
 
   display: inline-block;
 }
+
+:root {
+  --primaryDark: theme(colors.primaryDark);
+}

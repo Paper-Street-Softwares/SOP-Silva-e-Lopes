@@ -121,9 +121,9 @@ const content = {
       miniTag: 'ESCRITÓRIO DE ADVOCACIA',
       title: (
         <h1>
-          Seu direito à saúde não pode{' '}
+          Seu direito à{' '}
           <span className="destaque relative italic font-light">
-            esperar
+            saúde
             <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-primaryLight hidden desktop1:flex"
@@ -150,7 +150,8 @@ const content = {
                 />
               </svg>
             </span>
-          </span>
+          </span>{' '}
+          não pode
         </h1>
       ),
       subtitle: (
@@ -165,7 +166,7 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com advogado especialista',
+      ctaButtonText: 'Falar com Advogado especialista',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
@@ -498,7 +499,7 @@ const content = {
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Fale com um advogado especialista em Direito da Saúde e receba
+            Fale com um Advogado especialista em Direito da Saúde e receba
             orientação clara e segura sobre seu caso.
           </p>
         </div>
