@@ -8,19 +8,19 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
       <MotionDivDownToUp>
         <div
           id="cardBlog"
-          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] font-mainFont flex flex-col desktop1:max-w-[500px] desktop3:max-w-[375px] bg-white rounded-2xl p-[20px] border border-black"
+          className="w-[290px] phone2:w-[300px] phone3:w-[350px] tablet1:w-[400px] font-mainFont flex flex-col desktop1:max-w-[500px] desktop3:max-w-[375px] bg-quartenary rounded-2xl p-[20px]"
         >
           <div className="w-full max-h-[220px] tablet1:h-[300px] flex justify-center items-center overflow-hidden rounded-2xl">
             <div className="w-full">{img}</div>
           </div>
           <h1
-            className="mt-4 text-title1 leading-[25px] font-medium font-secondFont mb-[12px] text-white"
+            className="mt-4 text-title1 leading-[25px] font-bold font-secondFont mb-[12px] text-white"
             title="blogTitle"
           >
             {title}
           </h1>
           <h2
-            className="text-paragraph2 desktop2:text-paragraph3 font-secondFont mb-[32px] text-white/60 leading-[18px] desktop1:leading-[21px]  "
+            className="text-paragraph3 font-light font-secondFont mb-[32px] text-white/60 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
