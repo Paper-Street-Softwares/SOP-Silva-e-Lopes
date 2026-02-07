@@ -16,6 +16,7 @@ export default {
     'bg-red-700',
     'bg-wppDark',
     'bg-wppLight',
+    'text-primaryDark',
   ],
   theme: {
     extend: {

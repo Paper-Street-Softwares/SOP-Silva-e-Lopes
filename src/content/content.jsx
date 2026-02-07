@@ -38,7 +38,7 @@ const currentYear = new Date().getFullYear()
 export const infos = {
   name: 'Silva e Lopes Sociedade de Advogados',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'silvaelopes.socadv', // Email desejado pelo cliente
+  emailSecundario: 'silvaelopes.socadv@gmail.com', // Email desejado pelo cliente
   domain: 'silvaelopesadv.com.br', // Sem "www"
   phone: {
     ddd: '48',
@@ -223,7 +223,7 @@ const content = {
       title: (
         <h1>
           Defendemos
-          <span className="destaque italic font-light"> Seu </span>
+          <span className="text-primaryDark italic font-light"> Seu </span>
           Direito à Saúde
         </h1>
       ),
@@ -365,7 +365,10 @@ const content = {
       title: (
         <h1>
           Nossa
-          <span className="destaque italic font-light"> trajetória</span>{' '}
+          <span className="text-primaryDark italic font-light">
+            {' '}
+            trajetória
+          </span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
@@ -456,7 +459,7 @@ const content = {
       title: (
         <h1>
           Como
-          <span className="destaque italic font-light"> funciona </span>
+          <span className="text-primaryDark italic font-light"> funciona </span>
           nosso atendimento?
         </h1>
       ),
