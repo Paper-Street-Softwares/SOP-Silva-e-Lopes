@@ -156,8 +156,6 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className={`text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
-              shineClass={`bg-primaryDark/20`}
             />
           </div>
 
@@ -204,7 +202,7 @@ function NavbarNovaTemplate({
                             aria-label={`Link para ${item}`}
                             title={item}
                             data-track={id}
-                            className={`cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
+                            className={`cursor-pointer bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
                             onClick={(e) => {
                               e.preventDefault()
                               const el = document.getElementById(id)
@@ -240,8 +238,6 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                    className={`w-fit text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
-                    shineClass={`bg-primaryDark/20`}
                   />
                 </div>
               </motion.div>

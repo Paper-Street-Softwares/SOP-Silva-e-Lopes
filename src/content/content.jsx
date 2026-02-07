@@ -138,7 +138,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-text-primaryLight desktop1:hidden"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-primaryLight desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -503,28 +503,7 @@ const content = {
           </p>
         </div>
       ),
-      container: {
-        label1: {
-          icon: <Check className="text-white" />,
-          text: ' Análise inicial do seu caso criminal',
-        },
-        label2: {
-          icon: <Check className="text-white" />,
-          text: ' Atendimento direto com advogado criminalista',
-        },
-        label3: {
-          icon: <Check className="text-white" />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
-        },
-        label4: {
-          icon: <Check className="text-white" />,
-          text: ' Atuação iniciada imediatamente após a análise',
-        },
-        label5: {
-          icon: <Check className="text-white" />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
-        },
-      },
+
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
