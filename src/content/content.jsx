@@ -383,7 +383,7 @@ const content = {
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
-        <p className="text-mutedForeground font-secondFont">
+        <p className="font-secondFont">
           A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
           advocacia técnica, ética e profundamente humana. Atuamos de forma
           exclusiva no Direito aplicado aos Serviços de Saúde, com a convicção
