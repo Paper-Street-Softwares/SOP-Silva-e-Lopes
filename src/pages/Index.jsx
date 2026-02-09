@@ -74,7 +74,7 @@ export default function Index() {
             />
             <SocialMediaTemplate colorMode={colorMode} />
             {/* <Authority colorMode={colorMode} /> */}
-            <CtaNovoTemplate colorMode={colorMode} container={true} />
+            <CtaNovoTemplate colorMode={colorMode} container={false} />
             {/* <Important colorMode={colorMode} /> */}
             <StepsNovoTemplate colorMode={colorMode} />
             <BlogPosts colorMode={colorMode} />
