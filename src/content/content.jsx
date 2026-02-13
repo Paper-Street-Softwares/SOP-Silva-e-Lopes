@@ -829,7 +829,7 @@ const content = {
       footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
       midSectionName: 'Até mais',
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
+        'Agradecemos sua visita. Conte com nossa experiência e compromisso para proteger seus direitos com excelência e segurança.',
       footerSocialText: 'Siga a gente nas redes sociais:',
       footerNavegacaoText: 'NAVEGAÇÃO',
       desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
