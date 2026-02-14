@@ -1,16 +1,16 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
-import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
+import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
+import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
-import aboutImg from '../assets/imgs/about/aboutImg.webp'
+import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import {
   Baby,
@@ -29,31 +29,31 @@ import {
   ClockAlert,
   ShieldPlus,
   Wallet,
-} from 'lucide-react'
-import { Users } from 'lucide-react'
-import { FileText } from 'lucide-react'
+} from "lucide-react";
+import { Users } from "lucide-react";
+import { FileText } from "lucide-react";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Silva e Lopes Sociedade de Advogados',
-  email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'silvaelopes.socadv@gmail.com', // Email desejado pelo cliente
-  domain: 'silvaelopesadv.com.br', // Sem "www"
+  name: "Silva e Lopes Sociedade de Advogados",
+  email: "contato", // Email desejado pelo cliente
+  emailSecundario: "silvaelopes.socadv@gmail.com", // Email desejado pelo cliente
+  domain: "silvaelopesadv.com.br", // Sem "www"
   phone: {
-    ddd: '48',
-    firstPart: '99126', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '2920', // Apenas os 4 últimos números
+    ddd: "48",
+    firstPart: "99126", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2920", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -79,18 +79,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'silvaelopes.socadv', // Sem o @
-  facebookProfile: '',
-  linkeDinProfile: '',
-  x: '',
-  tiktokProfile: '',
+  instagramProfile: "silvaelopes.socadv", // Sem o @
+  facebookProfile: "",
+  linkeDinProfile: "",
+  x: "",
+  tiktokProfile: "",
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -105,23 +105,23 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'Início',
-        'Serviços',
-        'Sobre',
-        'Blog',
-        'Perguntas',
+        "Início",
+        "Serviços",
+        "Sobre",
+        "Blog",
+        "Perguntas",
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'blog', 'faq'],
-      ariaLabel: 'Botão de Contato',
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuId: ["home", "feature", "about", "blog", "faq"],
+      ariaLabel: "Botão de Contato",
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
+      miniTag: "ESCRITÓRIO DE ADVOCACIA",
       title: (
         <h1>
-          Seu direito à{' '}
+          Seu direito à{" "}
           <span className="destaque relative italic font-light">
             saúde
             <span>
@@ -150,7 +150,7 @@ const content = {
                 />
               </svg>
             </span>
-          </span>{' '}
+          </span>{" "}
           não pode esperar
         </h1>
       ),
@@ -163,63 +163,63 @@ const content = {
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
-      alt: 'Imagem ilustrativa da Seção Início',
+      alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com Advogado especialista',
-      ctaButtonTextSecondary: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      ctaButtonText: "Falar com Advogado especialista",
+      ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento online para todo Brasil',
-        textTwo: 'A_Definir',
+        text: "Atendimento online para todo Brasil",
+        textTwo: "A_Definir",
       },
-      secondaryCta: 'Contato',
+      secondaryCta: "Contato",
       images: {
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: "A_Definir",
+      title: "A_Definir",
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: "A_Definir",
+          paragraph: "A_Definir",
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: "A_Definir",
+          paragraph: "A_Definir",
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: "A_Definir",
+          paragraph: "A_Definir",
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: "A_Definir",
+          paragraph: "A_Definir",
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs: "A_Definir",
+      ctaButtonText: "A_Definir",
     },
     features: {
-      miniTag: 'Nossas Atuações',
+      miniTag: "Nossas Atuações",
       title: (
         <h1>
           Defendemos
@@ -228,15 +228,15 @@ const content = {
         </h1>
       ),
       subtitle:
-        'Atuamos para garantir tratamentos, terapias e cuidados negados injustamente pelos planos de saúde.',
+        "Atuamos para garantir tratamentos, terapias e cuidados negados injustamente pelos planos de saúde.",
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'Direito da Saúde',
+      alt: "imagem representativa da Seção Serviços",
+      titleMessageFeature: "100%",
+      subtitleMessageFeature: "Direito da Saúde",
       cards: {
         card1: {
-          title: 'Direito à Saúde Negado',
-          subtitle: 'Garantimos tratamentos negados injustamente pelos planos',
+          title: "Direito à Saúde Negado",
+          subtitle: "Garantimos tratamentos negados injustamente pelos planos",
           description: (
             <div>
               A_Definir
@@ -246,12 +246,12 @@ const content = {
             </div>
           ),
           icon: <BriefcaseMedical />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: 'Tratamentos para TEA Sem Interrupções',
-          subtitle: 'Atuação firme para garantir terapias essenciais ao TEA',
+          title: "Tratamentos para TEA Sem Interrupções",
+          subtitle: "Atuação firme para garantir terapias essenciais ao TEA",
           description: (
             <div>
               A_Definir
@@ -261,12 +261,12 @@ const content = {
             </div>
           ),
           icon: <HeartHandshake />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: 'Cirurgias Que Não Podem Esperar',
-          subtitle: 'Defesa jurídica para liberar cirurgias urgentes negadas',
+          title: "Cirurgias Que Não Podem Esperar",
+          subtitle: "Defesa jurídica para liberar cirurgias urgentes negadas",
           description: (
             <div>
               A_Definir <br />
@@ -276,12 +276,12 @@ const content = {
           ),
           icon: <ClockAlert />,
 
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: 'Medicamentos Que Salvam Vidas',
-          subtitle: 'Ações para garantir medicamentos essenciais ao tratamento',
+          title: "Medicamentos Que Salvam Vidas",
+          subtitle: "Ações para garantir medicamentos essenciais ao tratamento",
           description: (
             <div>
               A_Definir
@@ -291,12 +291,12 @@ const content = {
             </div>
           ),
           icon: <ShieldPlus />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: 'Contra Reajustes Abusivos',
-          subtitle: 'Proteção contra aumentos abusivos dos planos de saúde',
+          title: "Contra Reajustes Abusivos",
+          subtitle: "Proteção contra aumentos abusivos dos planos de saúde",
           description: (
             <div>
               A_Definir
@@ -306,12 +306,12 @@ const content = {
             </div>
           ),
           icon: <Wallet />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: 'Empatia, Compromisso e Respeito ao Paciente',
-          subtitle: 'Atendimento humano com foco na dignidade do paciente',
+          title: "Empatia, Compromisso e Respeito ao Paciente",
+          subtitle: "Atendimento humano com foco na dignidade do paciente",
           description: (
             <div>
               A_Definir
@@ -321,59 +321,75 @@ const content = {
             </div>
           ),
           icon: <Users />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card7: {
+          title: "Direito à Isenção do Imposto de Renda na Área da Saúde",
+          subtitle:
+            "Dedução Integral de Gastos com Escola Particular para Filho Autista e Pessoas com Deficiência - PCDs",
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: "A_Definir",
     },
     emergency: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "A_Definir",
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      embedsrc: "A_Definir",
     },
     about: {
       imagem: {
         img: aboutImg,
-        alt: 'Imagem ilustrativa da Seção Sobre',
+        alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: 'QUEM É O SILVA & LOPES',
+      miniTag: "QUEM É O SILVA & LOPES",
       title: (
         <h1>
           Nossa
           <span className="text-primaryDark italic font-light">
-            {' '}
+            {" "}
             trajetória
-          </span>{' '}
+          </span>{" "}
         </h1>
       ),
-      SecondPartTitle: '',
+      SecondPartTitle: "",
       subtitle:
-        'Uma advocacia especializada em Direito da Saúde, guiada por técnica, ética e humanidade.',
+        "Uma advocacia especializada em Direito da Saúde, guiada por técnica, ética e humanidade.",
       paragraph: (
         <div>
           A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
@@ -384,7 +400,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: 'Continuar lendo',
+      buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
           A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
@@ -407,27 +423,27 @@ const content = {
           garantia do direito reconhecido.
         </p>
       ),
-      paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      paragraphModalCta: "Entre em contato",
+      titleModal: "Nossa trajetória",
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "A_Definir",
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
+        miniTag: "REDES SOCIAIS",
+        title: "Conecte-se conosco",
         subtitle:
-          'Acompanhe nossas redes e fique por dentro de direitos do paciente, planos de saúde e atualizações jurídicas relevantes.',
+          "Acompanhe nossas redes e fique por dentro de direitos do paciente, planos de saúde e atualizações jurídicas relevantes.",
         paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
       },
     },
     // team: {
@@ -455,7 +471,7 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: "PASSO A PASSO",
       title: (
         <h1>
           Como
@@ -463,39 +479,39 @@ const content = {
           nosso atendimento?
         </h1>
       ),
-      subtitle: '',
+      subtitle: "",
       img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta especializada',
+          cardTitle: "Consulta especializada",
           cardDescription:
-            'Ouvimos sua situação com atenção, esclarecemos dúvidas e indicamos o melhor caminho jurídico para seu caso.',
+            "Ouvimos sua situação com atenção, esclarecemos dúvidas e indicamos o melhor caminho jurídico para seu caso.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise do caso',
+          cardTitle: "Análise do caso",
           cardDescription:
-            'Analisamos documentos, negativas do plano e laudos médicos para entender a fundo sua necessidade.',
+            "Analisamos documentos, negativas do plano e laudos médicos para entender a fundo sua necessidade.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Definição da estratégia',
+          cardTitle: "Definição da estratégia",
           cardDescription:
-            'Construímos uma estratégia jurídica personalizada para garantir seu direito à saúde com segurança.',
+            "Construímos uma estratégia jurídica personalizada para garantir seu direito à saúde com segurança.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Atuação e acompanhamento',
+          cardTitle: "Atuação e acompanhamento",
           cardDescription:
-            'Ingressamos com as medidas cabíveis e acompanhamos o caso até a efetiva garantia do seu direito.',
+            "Ingressamos com as medidas cabíveis e acompanhamos o caso até a efetiva garantia do seu direito.",
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: "A_Definir",
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
+      miniTag: "FALE CONOSCO",
       title: (
         <h1>Problemas com plano de saúde? Nós cuidamos do seu direito.</h1>
       ),
@@ -516,47 +532,47 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com um especialista no WhatsApp',
+      ctaButtonText: "Falar com um especialista no WhatsApp",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
+        "Botão para chamada de ação para contato pelo whatsapp",
     },
     blog: {
-      miniTag: 'BLOG',
-      title: 'Informação jurídica ao seu alcance',
+      miniTag: "BLOG",
+      title: "Informação jurídica ao seu alcance",
       subtitle:
-        'Acompanhe conteúdos exclusivos para manter-se sempre informado.',
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
-      labelCards: 'Ver mais',
-      label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'silvaelopesadv.wordpress.com', //sem "https://"
+      labelCards: "Ver mais",
+      label: "Clique aqui para ver todas as matérias",
+      blogLink: "silvaelopesadv.wordpress.com", //sem "https://"
     },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: "TIRE SUAS DÚVIDAS",
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
+          question: "Como posso contratar seus serviços?",
           answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+            "Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.",
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
+          question: "Qual é o prazo médio para resolução de um caso?",
           answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+            "O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.",
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
+          question: "Quais documentos devo levar para a consulta?",
           answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+            "Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.",
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
+          question: "Vocês oferecem serviços de consultoria preventiva?",
           answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+            "Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -826,13 +842,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita. Conte com nossa experiência e compromisso para proteger seus direitos com excelência e segurança.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
+        "Agradecemos sua visita. Conte com nossa experiência e compromisso para proteger seus direitos com excelência e segurança.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
+      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -858,7 +874,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1065,9 +1081,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: 'Profissionalismo',
-        ponto2: 'Experiência',
-        ponto3: 'Resultados',
+        ponto1: "Profissionalismo",
+        ponto2: "Experiência",
+        ponto3: "Resultados",
       },
     },
     // socios: {
@@ -1139,8 +1155,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
     },
     svgs: {
       wpp: (
@@ -1156,11 +1172,11 @@ const content = {
       ),
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;
