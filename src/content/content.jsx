@@ -38,7 +38,7 @@ const currentYear = new Date().getFullYear();
 export const infos = {
   name: "Silva e Lopes Sociedade de Advogados",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "silvaelopes.socadv@gmail.com", // Email desejado pelo cliente
+  emailSecundario: "silvaelopesadv@gmail.com", // Email desejado pelo cliente
   domain: "silvaelopesadv.com.br", // Sem "www"
   phone: {
     ddd: "48",
